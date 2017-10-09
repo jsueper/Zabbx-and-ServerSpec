@@ -1,6 +1,6 @@
 [{
         "ParameterKey": "RemoteAccessCIDR",
-        "ParameterValue": "Your IP Address Here "
+        "ParameterValue": "Your IP Address Here"
     },
     {
         "ParameterKey": "QSServerSpecBucketName",
