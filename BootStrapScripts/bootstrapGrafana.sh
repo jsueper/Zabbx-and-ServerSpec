@@ -321,6 +321,7 @@ sudo echo "INSERT INTO \`dashboard\` (\`id\`,\`version\`,\`slug\`,\`title\`,\`da
 
 
 
+
 sudo echo "INSERT INTO \`dashboard_tag\` (\`id\`,\`dashboard_id\`,\`term\`)  values ('1', '3', 'aws-quickstart');" >> enable_zabbix_plugin.sql
 
 
@@ -421,8 +422,9 @@ echo QS_END_Enable_Zabbix_Plugin_and_Datasource
 fi
 
 
-echo QS_END_Create_Grafana_Web_Conf_File
+echo QS_END_Create_Grafana_Web_Conf_File 
 
+# Restart core services for Zabbix
 sudo service httpd restart
 sudo /bin/systemctl daemon-reload
 sudo service grafana-server restart
