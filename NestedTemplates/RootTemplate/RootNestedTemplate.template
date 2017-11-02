@@ -50,8 +50,7 @@
           },
           "Parameters": [
             "QSS3BucketName",
-            "QSS3KeyPrefix",
-            "QSServerSpecBucketName"
+            "QSS3KeyPrefix"
           ]
         }
       ],
@@ -94,9 +93,6 @@
         },
         "QSS3KeyPrefix": {
           "default": "Quick Start S3 Key Prefix"
-        },
-        "QSServerSpecBucketName": {
-          "default": "Quick Start ServerSpec Bucket"
         }
       }
     }
@@ -186,14 +182,7 @@
       "Default": "m4.large",
       "Description": "Choose your Custom Instance type for Zabbix Test Agent Server",
       "Type": "String"
-    },
-    "QSServerSpecBucketName": {
-      "AllowedPattern": "^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$",
-      "ConstraintDescription": "Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
-      "Default": "serverspec-test",
-      "Description": "S3 bucket name for the Server Spec assets. Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
-      "Type": "String"
-    },
+    }
     "QSS3BucketName": {
       "AllowedPattern": "^[0-9a-zA-Z]+([0-9a-zA-Z-]*[0-9a-zA-Z])*$",
       "ConstraintDescription": "Quick Start bucket name can include numbers, lowercase letters, uppercase letters, and hyphens (-). It cannot start or end with a hyphen (-).",
@@ -1401,9 +1390,8 @@
           "ServerName": {
             "Ref": "TestInstanceName"
           },
-          "QSServerSpecBucketName": {
-            "Ref": "QSServerSpecBucketName"
-          },
+          "QSServerSpecBucketName": "serverspec-test",
+          
           "QSS3BucketName": {
             "Ref": "QSS3BucketName"
           },
