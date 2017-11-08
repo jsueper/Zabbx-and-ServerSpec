@@ -3,10 +3,6 @@
         "ParameterValue": "Your IP Address Here"
     },
     {
-        "ParameterKey": "QSServerSpecBucketName",
-        "ParameterValue": "serverspec-test"
-    },
-    {
         "ParameterKey": "EnvironmentName",
         "ParameterValue": "QS1"
     },
