@@ -412,7 +412,7 @@ sudo echo "INSERT INTO \`dashboard_tag\` (\`id\`,\`dashboard_id\`,\`term\`)  val
 
 
 
-
+# Here we need to sleep to allow ensure the grafana database is fully setup before we insert any data to it.
 sleep 120
 
 echo QS_BEGIN_Enable_Zabbix_Plugin_and_Datasource
