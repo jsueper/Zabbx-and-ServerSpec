@@ -2,12 +2,12 @@
 
 set -o errexit -o xtrace
 
-region="YOUR KEY HERE"
+region="us-east-1"
 
-bucket="YOUR MAIN ASSET FOLDER HERE"
-key="YOUR KEY HERE"
+bucket="quickstart-reference-as"
+key="zabbixgrafananested/setup/latest"
 
-serverspec_bucket="YOUR SERVER SPEC BUCKET HERE"
+serverspec_bucket="serverspec-test"
 
 
 aws s3api create-bucket --bucket ${bucket} --region ${region} --acl public-read
