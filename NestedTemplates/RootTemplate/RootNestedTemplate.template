@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "Master template that includes nested templates for installing a Zabbix, Grafana, along with a Zabbix Test Subject and RDS Aurora Cluster in a NEW VPC",
+  "Description": "Master template that includes nested templates for installing a Zabbix, Grafana, along with a Zabbix Test Subject and RDS Aurora Cluster in a New VPC",
   "Metadata": {
     "AWS::CloudFormation::Interface": {
       "ParameterGroups": [
@@ -52,7 +52,7 @@
             "QSS3BucketName",
             "QSS3KeyPrefix",
             "QSServerSpecBucketName"
-          ]
+          ] 
         }
       ],
       "ParameterLabels": {
