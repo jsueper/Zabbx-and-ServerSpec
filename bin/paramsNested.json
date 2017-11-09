@@ -32,7 +32,7 @@
     },
     {
         "ParameterKey": "KeyPairName",
-        "ParameterValue": "private-az-key-oregon"
+        "ParameterValue": "YOUR PRIVATE KEYPAIR NAME HERE!!"
     },
     {
         "ParameterKey": "InstanceType",
